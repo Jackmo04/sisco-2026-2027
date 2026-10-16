@@ -12,7 +12,7 @@ public class TestHowManyThreads {
 					System.out.println("Hello from " + Thread.currentThread().getName());
 					counter.addAndGet(1);					
 					try {
-						Thread.sleep(5000);
+						Thread.sleep(100000);
 					} catch (Exception ex) {}
 				}).start();
 			}

@@ -12,7 +12,7 @@ public class MyRunnable implements Runnable {
 		log("Hello concurrent world!");
 		log("Sleeping for 3 secs...");
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(30000);
 		} catch (InterruptedException ex) {
 			ex.printStackTrace();
 		}

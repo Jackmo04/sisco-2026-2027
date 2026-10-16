@@ -10,7 +10,7 @@ public class MyThread extends Thread {
 		log("Hello concurrent world!");
 		log("Sleeping for 5 secs...");
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(50000);
 		} catch (InterruptedException ex) {
 			ex.printStackTrace();
 		}
