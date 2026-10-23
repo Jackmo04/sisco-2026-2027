@@ -22,7 +22,7 @@ public class Test {
 		int nWorkers = Runtime.getRuntime().availableProcessors(); 
 		
 		long totalAmountOfCPUJob = 800_000_000;
-		long totalAmountOfIOJob = 20000; 
+		long totalAmountOfIOJob = 20_000; 
 		
 		int seed = 100;
 		

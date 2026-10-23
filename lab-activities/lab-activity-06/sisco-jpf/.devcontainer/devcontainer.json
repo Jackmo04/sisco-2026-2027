@@ -1,0 +1,16 @@
+{
+    "name": "JPF Environment - SISCO Lab",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack"
+            ]
+        }
+    },
+    "remoteUser": "vscode",
+    "workspaceFolder": "/sisco-jpf",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/sisco-jpf,type=bind"
+}
