@@ -5,23 +5,23 @@ public class Cron {
 	private boolean running;
 	private long startTime;
 
-	public Cron(){
+	public Cron() {
 		running = false;
 	}
-	
-	public void start(){
+
+	public void start() {
 		running = true;
 		startTime = System.currentTimeMillis();
 	}
-	
-	public void stop(){
+
+	public void stop() {
 		startTime = getTime();
 		running = false;
 	}
-	
-	public long getTime(){
-		if (running){
-			return 	System.currentTimeMillis() - startTime;
+
+	public long getTime() {
+		if (running) {
+			return System.currentTimeMillis() - startTime;
 		} else {
 			return startTime;
 		}
