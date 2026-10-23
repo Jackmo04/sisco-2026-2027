@@ -4,13 +4,15 @@ public class TestLostUpdates {
 
 	public static void main(String[] args) throws Exception {
 
-		long ntimes = 10000; // 1_000_000_000_000_000L; // try with different values: 100, 200, 1000, 5000, ...
+		long ntimes = 100000; // 1_000_000_000_000_000L; // try with different values: 100, 200, 1000, 5000, ...
 
 		if (args.length > 0) {
 			ntimes = Integer.parseInt(args[0]);
 		}
 
-		UnsafeCounter c = new UnsafeCounter(0);
+		//Counter c = new UnsafeCounter(0);
+		Counter c = new SafeCounter(0);
+
 		Worker w1 = new Worker("Worker-A", c, ntimes);
 		Worker w2 = new Worker("Worker-B", c, ntimes);
 

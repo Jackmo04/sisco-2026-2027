@@ -5,7 +5,7 @@ package sisco.lost_updates;
  * This class is *NOT* Thread-safe
  * 
  */
-public class UnsafeCounter {
+public class UnsafeCounter implements Counter {
 
 	private int cont;
 
