@@ -12,6 +12,7 @@ public class TestLostUpdates {
 
 		//Counter c = new UnsafeCounter(0);
 		Counter c = new SafeCounter(0);
+		//Counter c = new SafeCounter2(0);
 
 		Worker w1 = new Worker("Worker-A", c, ntimes);
 		Worker w2 = new Worker("Worker-B", c, ntimes);
